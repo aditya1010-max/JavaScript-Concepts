@@ -106,3 +106,47 @@ console.log(counter.value()); // 2.
 counter.decrement();
 console.log(counter.value()); // 1.
 
+
+
+// closure scope chain
+
+const a = 10;
+
+function sum(b) {
+    return function(c) {
+        return function(d) {
+            return function(e) {
+                return function(f) {
+                    return a + b + c + d + e + f;
+                };
+            };
+        };
+    };
+}
+//here we can see all the nested function hve the access of outer functions scope
+
+console.log(sum(1)(2)(3)(4)(5)) 
+
+
+
+// Closures can capture variables in block scopes and module scopes as well.
+
+
+function outer() {
+  let getY;
+
+  {
+    const y = 12;
+    getY = () => y;
+
+  }
+
+  console.log(typeof y);  // this will return undefined 
+  console.log(getY());    // this will return 12 
+}
+
+outer();
+
+
+
+
