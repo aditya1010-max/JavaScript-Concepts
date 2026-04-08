@@ -27,3 +27,14 @@ sayHiie();
 const sayHiie = function () {
   console.log("Hi!");
 };
+
+
+
+
+// same for arrow-functions 
+ 
+greet();  //this will throw an error 
+
+const greet = () => {
+  console.log("Hello");
+};
