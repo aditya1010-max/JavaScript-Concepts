@@ -9,7 +9,7 @@ how this depends on how function is called
 3️⃣ Method Context (Objects)
 this inside object methods
 dynamic binding
-4️⃣ Arrow Functions ⚡ (VERY IMPORTANT)
+4️⃣ Arrow Functions 
 no own this
 lexical this
 5️⃣ Constructor Functions / Classes
